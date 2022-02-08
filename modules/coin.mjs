@@ -15,7 +15,7 @@
  */
 
 function coinFlip() {
-  let x = Math.round(Math.random);
+  let x = Math.round(Math.random());
   if (x == 0) {
     return 'heads';
   } else {
