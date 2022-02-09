@@ -66,9 +66,9 @@ function coinFlips(flips) {
 function countFlips(array) {
   const counter = {heads: 0, tails: 0};
   for (let flip in array) {
-    if (flip == 'heads') {
+    if (array[flip] == 'heads') {
       counter.heads++;
-    } else if (flip == 'tails') {
+    } else if (array[flip] == 'tails') {
       counter.tails++;
     }
   }
