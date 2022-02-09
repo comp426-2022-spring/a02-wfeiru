@@ -95,6 +95,7 @@ function flipACoin(call) {
   } else {
     record.result = 'lose';
   }
+  return record;
 }
 
 
