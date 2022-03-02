@@ -64,13 +64,12 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
-  const counter = {heads: 0, tails: 0};
+  const counter = {};
   for (let flip in array) {
-    if (array[flip] == 'heads') {
-      counter.heads++;
-    } else if (array[flip] == 'tails') {
-      counter.tails++;
+    if (!(array[flip] in counter)) {
+      counter[array[flip]] = 0;
     }
+    counter[array[flip]]++;  
   }
   return counter;
 }
