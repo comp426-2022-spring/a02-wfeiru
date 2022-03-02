@@ -11,14 +11,10 @@ try {
     if (args['call'] != 'heads' && args['call'] != 'tails') {
         throw "invalid input"
     }
+    let call = args['call'];
+    const record = flipACoin(call);
+    console.log(record);
 } catch (err) {
     console.log('Error: ' + err);
     console.log('Usage: node guess-flip --call=[heads|tails]');
-    process.exit(1);
 }
-
-let call = args['call'];
-
-const record = flipACoin(call);
-
-console.log(record);
